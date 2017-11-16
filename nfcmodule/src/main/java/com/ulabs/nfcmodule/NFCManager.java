@@ -11,7 +11,6 @@ import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.Ndef;
-import android.nfc.tech.NfcF;
 import android.os.Parcelable;
 
 import java.io.IOException;
@@ -66,7 +65,7 @@ public class NFCManager{
     private NfcAdapter mAdapter;
     private static NFCManager manager;
     private PendingIntent pendingIntent;
-    private String[][] techListsArray = new String[][]{new String[]{NfcF.class.getName()}};
+    private String[][] techListsArray = new String[][]{new String[]{Ndef.class.getName()}};
 
     private NFCManager() {
     }
